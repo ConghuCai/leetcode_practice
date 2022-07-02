@@ -1,10 +1,14 @@
 package site.conghucai.acm;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 import site.conghucai.problem.easy.Solution141;
 import site.conghucai.problem.easy.Solution206;
 import site.conghucai.problem.easy.Solution7;
+import site.conghucai.problem.hard.Solution224;
 import site.conghucai.problem.hard.Solution25;
 import site.conghucai.problem.middle.Solution142;
 import site.conghucai.problem.middle.Solution19;
@@ -173,5 +177,13 @@ public class AcmFunc {
     System.out.println(sb.toString());
   }
 
+  void test224() throws IOException {
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    String s = in.readLine();
+
+    int ans = new Solution224().calculate(s);
+
+    System.out.println(ans);
+  }
   //
 }

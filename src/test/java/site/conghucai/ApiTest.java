@@ -1,21 +1,25 @@
 package site.conghucai;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
 import org.junit.Test;
 
-import site.conghucai.api.MyPriorityQueue;
+import site.conghucai.api.MyKMP;
 
 public class ApiTest {
-  public static void main(String[] args) {
-    int[] nums = { 2, 3, 5, 7, 43, 54, 8, 6, 65, 53, 13, 66, 91, 80, 11, 10 };
+  public static void main(String[] args) throws IOException {
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    String str = in.readLine();
 
-    MyPriorityQueue<Integer> pq = new MyPriorityQueue<>(30);
-    for (int num : nums) {
-      pq.add(num);
-    }
-
-    for (int num = pq.delPeek(); !pq.isEmpty(); num = pq.delPeek()) {
-      System.out.println(num);
-    }
+    BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+    out.write(1 + '0');
+    out.newLine();
+    out.write(str);
+    out.flush();
   }
 
   @Test
@@ -23,4 +27,13 @@ public class ApiTest {
     int res = Integer.parseInt("0000001");
     System.out.println(res);
   }
+
+  @Test
+  public void testKMP() {
+    String pat = "ababc";
+    String txt = "abcababaabcabab";
+    MyKMP kmp = new MyKMP(pat);
+    System.out.println(kmp.search(txt));
+  }
+
 }
