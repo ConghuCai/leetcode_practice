@@ -57,6 +57,15 @@ public class Solution224 {
           case '-':
             stack.push(-num);
             break;
+
+          // 如果有加减乘除 加上两个分支就可以了 （但是对于除法 由于stack只能盛放整数 如果不是整除会计算错误。。。）
+          case '*':
+            stack.push(num * stack.pop());
+            break;
+          case '/':
+            stack.push(stack.pop() / num);
+            break;
+
         }
 
         // 遇到右括号：计算完成 将之前 返回结果就行了
