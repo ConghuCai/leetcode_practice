@@ -1,8 +1,11 @@
 package site.conghucai.acm;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.List;
 import java.util.Scanner;
 
 import site.conghucai.problem.easy.Solution141;
@@ -10,6 +13,7 @@ import site.conghucai.problem.easy.Solution206;
 import site.conghucai.problem.easy.Solution7;
 import site.conghucai.problem.hard.Solution224;
 import site.conghucai.problem.hard.Solution25;
+import site.conghucai.problem.hard.Solution51;
 import site.conghucai.problem.middle.Solution142;
 import site.conghucai.problem.middle.Solution19;
 import site.conghucai.problem.middle.Solution92;
@@ -184,6 +188,24 @@ public class AcmFunc {
     int ans = new Solution224().calculate(s);
 
     System.out.println(ans);
+  }
+
+  void test51() throws IOException {
+    Scanner s = new Scanner(System.in);
+    int n = s.nextInt();
+    s.close();
+
+    List<List<String>> ans = new Solution51().solveNQueens(n);
+
+    BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+    for (List<String> res : ans) {
+      for (String str : res) {
+        writer.write(str);
+        writer.newLine();
+      }
+      writer.newLine();
+      writer.flush();
+    }
   }
   //
 }

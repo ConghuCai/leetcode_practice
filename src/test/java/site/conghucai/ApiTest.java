@@ -36,4 +36,13 @@ public class ApiTest {
     System.out.println(kmp.search(txt));
   }
 
+  @Test
+  public void myTest001() {
+    double pi = 3.1415926;
+    String str = String.format("|%2.2f|", pi);
+    System.out.println(str);
+
+    System.out.println(String.format("|%05.2f|", pi));
+  }
+
 }
