@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>site.conghucai</groupId>
-  <artifactId>leetcode_practice</artifactId>
+  <artifactId>code-practice</artifactId>
   <version>1.0</version>
 
-  <name>leetcode_practice</name>
+  <name>code-practice</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://www.conghucai.site</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

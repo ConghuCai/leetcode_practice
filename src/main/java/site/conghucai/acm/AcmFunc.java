@@ -8,16 +8,16 @@ import java.io.OutputStreamWriter;
 import java.util.List;
 import java.util.Scanner;
 
-import site.conghucai.problem.easy.Solution141;
-import site.conghucai.problem.easy.Solution206;
-import site.conghucai.problem.easy.Solution7;
-import site.conghucai.problem.hard.Solution224;
-import site.conghucai.problem.hard.Solution25;
-import site.conghucai.problem.hard.Solution51;
-import site.conghucai.problem.middle.Solution142;
-import site.conghucai.problem.middle.Solution19;
-import site.conghucai.problem.middle.Solution92;
-import site.conghucai.struct.ListNode;
+import site.conghucai.leetcode.problem.easy.Solution141;
+import site.conghucai.leetcode.problem.easy.Solution206;
+import site.conghucai.leetcode.problem.easy.Solution7;
+import site.conghucai.leetcode.problem.hard.Solution224;
+import site.conghucai.leetcode.problem.hard.Solution25;
+import site.conghucai.leetcode.problem.hard.Solution51;
+import site.conghucai.leetcode.problem.middle.Solution142;
+import site.conghucai.leetcode.problem.middle.Solution19;
+import site.conghucai.leetcode.problem.middle.Solution92;
+import site.conghucai.leetcode.struct.ListNode;
 
 /* Type your acm test func here. function name format: test + num.  eg: test101*/
 public class AcmFunc {
