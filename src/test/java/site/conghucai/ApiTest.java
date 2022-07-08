@@ -9,6 +9,8 @@ import java.io.OutputStreamWriter;
 import org.junit.Test;
 
 import site.conghucai.api.MyKMP;
+import site.conghucai.leetcode.problem.hard.Solution123;
+import site.conghucai.leetcode.problem.hard.Solution188;
 
 public class ApiTest {
   public static void main(String[] args) throws IOException {
@@ -45,4 +47,18 @@ public class ApiTest {
     System.out.println(String.format("|%05.2f|", pi));
   }
 
+  @Test
+  public void testSoluve123() {
+    int[] prices = { 5 };
+    int ans = new Solution123().maxProfit(prices);
+    System.out.println(ans);
+  }
+
+  @Test
+  public void testSoluve188() {
+    int[] prices = { 1, 2, 4, 2, 5, 7, 2, 4, 9, 0 };
+    int k = 4;
+    int ans = new Solution188().maxProfit(k, prices);
+    System.out.println(ans);
+  }
 }
