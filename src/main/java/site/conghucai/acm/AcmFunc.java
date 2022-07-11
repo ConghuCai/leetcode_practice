@@ -13,7 +13,9 @@ import site.conghucai.leetcode.problem.easy.Solution206;
 import site.conghucai.leetcode.problem.easy.Solution7;
 import site.conghucai.leetcode.problem.hard.Solution224;
 import site.conghucai.leetcode.problem.hard.Solution25;
+import site.conghucai.leetcode.problem.hard.Solution32;
 import site.conghucai.leetcode.problem.hard.Solution51;
+import site.conghucai.leetcode.problem.hard.Solution85;
 import site.conghucai.leetcode.problem.middle.Solution142;
 import site.conghucai.leetcode.problem.middle.Solution19;
 import site.conghucai.leetcode.problem.middle.Solution92;
@@ -206,6 +208,37 @@ public class AcmFunc {
       writer.newLine();
       writer.flush();
     }
+  }
+
+  void test32() throws IOException {
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    String s = in.readLine();
+
+    int ans = new Solution32().longestValidParentheses(s);
+
+    System.out.println(ans);
+  }
+
+  void test85() throws IOException {
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    String s = in.readLine();
+    String[] lines = s.split(",");
+    String[] line = lines[0].trim().split(" ");
+    int m = lines.length, n = line.length;
+    char[][] matrix = new char[m][n];
+
+    for (int i = 0; i < m; i++) {
+      line = lines[i].trim().split(" ");
+
+      for (int j = 0; j < n; j++) {
+        matrix[i][j] = Integer.parseInt(line[j]) == 0 ? '0' : '1';
+      }
+    }
+
+    int ans = new Solution85().maximalRectangle(matrix);
+
+    System.out.println(ans);
+
   }
   //
 }
