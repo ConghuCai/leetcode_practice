@@ -11,6 +11,8 @@ import org.junit.Test;
 import site.conghucai.api.MyKMP;
 import site.conghucai.leetcode.problem.hard.Solution123;
 import site.conghucai.leetcode.problem.hard.Solution188;
+import site.conghucai.leetcode.problem.middle.Solution486;
+import site.conghucai.leetcode.problem.middle.Solution523;
 
 public class ApiTest {
   public static void main(String[] args) throws IOException {
@@ -60,5 +62,25 @@ public class ApiTest {
     int k = 4;
     int ans = new Solution188().maxProfit(k, prices);
     System.out.println(ans);
+  }
+
+  @Test
+  public void testSoluve486() {
+    int[] nums = { 1, 3, 1 };
+
+    boolean ans = new Solution486().PredictTheWinner(nums);
+
+    System.out.println(ans);
+  }
+
+  @Test
+  public void testSoluve523() {
+    int[] nums = { 1, 2, 3, 4, 5, 0, 0, 7 };
+    int k = 8;
+
+    boolean ans = new Solution523().checkSubarraySum(nums, k);
+
+    System.out.println(ans);
+
   }
 }
