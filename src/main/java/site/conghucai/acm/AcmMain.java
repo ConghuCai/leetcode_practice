@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 public class AcmMain {
     public static void main(String[] args) throws Throwable {
-        acm("10"); // problem number.
+        acm("301"); // problem number.
     }
 
     private static void acm(String problemNum) throws Throwable {
