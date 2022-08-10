@@ -28,7 +28,7 @@ public class ApiTest {
 
     @Test
     public void testParseInt() {
-        int res = Integer.parseInt("0000001");
+        int res = Integer.parseInt("   0000001".trim());
         System.out.println(res);
     }
 
